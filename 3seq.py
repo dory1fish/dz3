@@ -1,0 +1,8 @@
+first_str = input('Введите элементы первого списка через запятую: ')
+second_str = input('Введите элементы второго списка через запятую: ')
+first_str = first_str.split(',')
+second_str = second_str.split(',')
+first_set = set([int(x) for x in first_str])
+second_set = set([int(y) for y in second_str])
+unique_list = list(first_set-second_set)
+print(unique_list)
